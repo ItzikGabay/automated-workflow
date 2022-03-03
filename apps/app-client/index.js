@@ -1,3 +1,3 @@
-const general = require("@app/shared-functions");
+const { general } = require("@app/shared-functions");
 
 general.test();
