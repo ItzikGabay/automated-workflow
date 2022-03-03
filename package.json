@@ -5,13 +5,7 @@
     "start": "lerna run start --parallel",
     "postinstall": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "sh scripts/commit-msg-validate.sh $HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
-    "husky": "^7.0.0",
     "lerna": "^3.22.1",
     "prettier": "2.5.1"
   },
