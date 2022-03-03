@@ -4,6 +4,7 @@
 
 
 # echo "$1"
+# exit 1
 # echo "$HUSKY_GIT_PARAMS"
 
 # INPUT_FILE=$1
