@@ -4,12 +4,13 @@
 # lerna
 node_modules
 
-# client
-client/node_modules
+# apps
+apps/*/node_modules
+apps/*/.env
+.env
 
-# server
-server/node_modules
-server/.env
+# lerna
+lerna-debug.log
 
 # misc
-appnotes.js
+appnotes.md

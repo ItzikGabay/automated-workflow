@@ -1,0 +1,26 @@
+{
+  "name": "shared-functions",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "ItzikDevio <itzikdevio@gmail.com>",
+  "homepage": "https://github.com/ItzikGabay/monorepo-lerna-boilerplate#readme",
+  "license": "ISC",
+  "main": "lib/shared-functions.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItzikGabay/monorepo-lerna-boilerplate.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ItzikGabay/monorepo-lerna-boilerplate/issues"
+  }
+}
