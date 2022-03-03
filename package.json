@@ -3,7 +3,12 @@
   "private": true,
   "scripts": {
     "start": "lerna run start --parallel",
-    "prepare": "husky install"
+    "postinstall": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "sh ./scripts/commit-msg-validate.sh $HUSKY_GIT_PARAMS"
+    }
   },
   "devDependencies": {
     "husky": "^7.0.0",
