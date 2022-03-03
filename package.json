@@ -7,7 +7,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "sh ./scripts/commit-msg-validate.sh $HUSKY_GIT_PARAMS"
+      "commit-msg": "echo $HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
