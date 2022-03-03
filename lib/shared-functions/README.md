@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const sharedFunctions = require('shared-functions');
+const sharedFunctions = require('@app/shared-functions');
 
 // TODO: DEMONSTRATE API
 ```
