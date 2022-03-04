@@ -7,9 +7,9 @@
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run start --parallel",
     "dev:next": "cd ./apps/app-client && npm run dev"
-
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
     "lerna": "^3.22.1",
     "prettier": "2.5.1"
   },
