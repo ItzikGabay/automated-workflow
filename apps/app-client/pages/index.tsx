@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   const result = general.test();
   console.log(result);
 
-  return <div>Hello world</div>;
+  return <div>text from the file: {result}</div>;
 };
 
 export default Home;
