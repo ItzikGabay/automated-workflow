@@ -23,6 +23,7 @@
     "url": "https://github.com/ItzikGabay/monorepo-lerna-boilerplate/issues"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "shared-styles": "^1.0.4"
   }
 }
