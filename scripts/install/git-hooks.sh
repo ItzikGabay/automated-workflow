@@ -21,13 +21,13 @@ git_hooks_path=$current_directory/.git/hooks
 echo "# Installing reposetory git hooks..."
 cd $git_hooks_path
 
-if [ -f "pre-commit.sample" ]; then
-  echo "# pre-commit.sample not found! activating file..."
-  mv pre-commit.sample pre-commit
-  cat $current_directory/scripts/commits/commit-msg-validate.sh > $git_hooks_path/pre-commit
-  chmod +x $git_hooks_path/pre-commit
+if [ -f "prepare-commit-msg.sample" ]; then
+  echo "# prepare-commit-msg.sample not found! activating file..."
+  mv prepare-commit-msg.sample prepare-commit-msg
+  cat $current_directory/scripts/commits/commit-msg-validate.sh > $git_hooks_path/prepare-commit-msg
+  chmod +x $git_hooks_path/prepare-commit-msg
 else
-  echo "pre-commit.sample found! Skipping activating the file..."
+  echo "prepare-commit-msg.sample found! Skipping activating the file..."
 fi
 
 
