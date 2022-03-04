@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "start": "lerna run start --parallel",
-    "postinstall": "husky install"
+    "start": "lerna run start --parallel"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
