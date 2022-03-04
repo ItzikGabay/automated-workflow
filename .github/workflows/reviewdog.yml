@@ -21,9 +21,13 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-
       - name: install client
-        run: |
+      - run: |
           yarn
           yarn run build
         working-directory: "./apps/app-client"
+      - uses: reviewdog/action-eslint@v1
+          reporter: github-pr-review
+          level: 'warning'
+          fail_on_error: true
+          workdir: "./apps/app-client"
