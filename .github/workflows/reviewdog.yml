@@ -27,7 +27,8 @@ jobs:
           yarn run build
         working-directory: "./apps/app-client"
       - uses: reviewdog/action-eslint@v1
+        with:
           reporter: github-pr-review
-          level: 'warning'
+          level: "warning"
           fail_on_error: true
           workdir: "./apps/app-client"
