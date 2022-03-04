@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 14
       - name: install client
-      - run: |
+        run: |
           yarn
           yarn run build
         working-directory: "./apps/app-client"
