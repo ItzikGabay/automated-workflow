@@ -1,10 +1,3 @@
-# Variables
-
-current_directory=$PWD
-package_json_path="$current_directory/package-lock.json"
-git_hooks_path=$current_directory/.git/hooks
-
-
 # # Step 1 - Check if package.json exists
 
 # if [ -f $package_json_path ]; then
@@ -15,8 +8,7 @@ git_hooks_path=$current_directory/.git/hooks
 #   npm install
 # fi
 
-
-# Step 2 - Check if git hooks exists
+# Checking if git hooks exists
 
 echo "# Installing reposetory git hooks..."
 cd $git_hooks_path
