@@ -1,7 +1,7 @@
 {
   "name": "root",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "lerna run start --parallel",
     "bootstrap": "lerna bootstrap",
@@ -11,7 +11,10 @@
   "devDependencies": {
     "eslint": "^8.10.0",
     "lerna": "^3.22.1",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint-plugin-react": "^7.29.3"
   },
   "workspaces": [
     "apps/*",
