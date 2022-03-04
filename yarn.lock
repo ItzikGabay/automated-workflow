@@ -5450,6 +5450,11 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
+shared-styles@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/shared-styles/-/shared-styles-1.0.4.tgz#f366937bccc79e2cb5aef8573f30f606f40516bd"
+  integrity sha512-VpTaq2xBOun0gBF7VFe74iCMKzyDdBFv4LcYYVfI5DAq5skOSjfs7ywWQPQZaWyqcGxXyYMI1ztyb/a8hnX3Zw==
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
