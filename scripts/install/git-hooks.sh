@@ -1,7 +1,5 @@
 # Variables
 
-cd ../../
-
 current_directory=$PWD
 package_json_path="$current_directory/package-lock.json"
 git_hooks_path=$current_directory/.git/hooks
@@ -24,12 +22,12 @@ echo "# Installing reposetory git hooks..."
 cd $git_hooks_path
 
 if [ -f "pre-commit.sample" ]; then
-  echo "# pre-commit found! Skipping activating file..."
+  echo "# pre-commit.sample not found! activating file..."
+  mv pre-commit.sample pre-commit
+  cat $current_directory/scripts/commits/commit-msg-validate.sh > $git_hooks_path/pre-commit
+  chmod +x $git_hooks_path/pre-commit
 else
-  echo "pre-commit not found! activating the file..."
-  mv commit-msg.sample commit-msg
-  cat $current_directory/hooks/commits/commit-msg-validate > $git_hooks_path/commit-msg
-  chmod +x $git_hooks_path/commit-msg
+  echo "pre-commit.sample found! Skipping activating the file..."
 fi
 
 
