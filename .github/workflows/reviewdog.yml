@@ -21,10 +21,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: install client
-        run: |
-          yarn
-          yarn run build
+      - name: Yarn on client..
+        run: yarn
         working-directory: "./apps/app-client"
       - uses: reviewdog/action-eslint@v1
         with:
