@@ -18,10 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: install client
       - run: |
           yarn
-          yarn build
-    - uses: reviewdog/action-eslint@v1
-        with:
+          yarn run build
+        working-directory: "./apps/app-client"
+      - uses: reviewdog/action-eslint@v1
           reporter: github-pr-review
+          level: 'warning'
           fail_on_error: true
+          workdir: "./apps/app-client"
