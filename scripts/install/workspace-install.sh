@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "wasup"
+echo "Installing workspace..."
 
 yarn

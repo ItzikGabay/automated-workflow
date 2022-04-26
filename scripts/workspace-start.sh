@@ -19,11 +19,11 @@ echo "Done!"
 # Client startup
 
 echo "Starting client..."
-npx pm2 start "yarn run dev:next" --name "nextjs-client-dev"
+npx pm2 start ecosystem.config.js
 
-echo "Done!"
+echo "Started successfully!"
 
 npx pm2 logs
 
-echo "Enjoy your time!"
+echo "Happy coding!"
 exit 1
