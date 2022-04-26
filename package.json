@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.5",
   "scripts": {
-    "start": "lerna run start --parallel",
+    "dev": "sh ./scripts/workspace-start.sh",
+    "start:lerna": "lerna run start --parallel",
+    "dev:lerna": "lerna run start --parallel",
     "bootstrap": "lerna bootstrap",
-    "dev": "lerna run start --parallel",
     "dev:next": "cd ./apps/app-client && npm run dev"
   },
   "devDependencies": {

@@ -23,7 +23,10 @@ npx pm2 start ecosystem.config.js
 
 echo "Started successfully!"
 
+echo "Removing in cache PM2 logs.."
+rm -rf ~/.pm2/logs/*
 npx pm2 logs
+
 
 echo "Happy coding!"
 exit 1

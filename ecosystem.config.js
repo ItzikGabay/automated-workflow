@@ -1,8 +1,19 @@
 module.exports = {
   apps: [
     {
-      name: "app",
+      name: "app-website",
       script: "cd ./apps/app-website && yarn dev",
+      env: {
+        NODE_ENV: "development",
+      },
+      env_production: {
+        NODE_ENV: "production",
+      },
+      watch: true,
+    },
+    {
+      name: "health-service",
+      script: "cd ./apps/service-health && node index.js",
       env: {
         NODE_ENV: "development",
       },
